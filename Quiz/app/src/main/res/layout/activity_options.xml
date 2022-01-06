@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginHorizontal="20dp">
+
+        <ImageView
+            android:id="@+id/ivLogo"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/app_logo"
+            android:layout_gravity="center"
+            android:layout_marginTop="100dp" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:text="Poziom trudności:" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <RadioButton
+                android:id="@+id/rbSingleAnswers"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Pytania z jedną odpowiedzią"
+                android:checked="true" />
+
+            <RadioButton
+                android:id="@+id/rbMultipleAnswers"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Pytania z wieloma odpowiedziami" />
+
+        </RadioGroup>
+
+        <Switch
+            android:id="@+id/swPointsOn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Pokaż punkty gracza:"
+            tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+        <Switch
+            android:id="@+id/swCorrectOn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Pokazuj prawidłowe odpowiedzi:"
+            tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+        <Button
+            android:id="@+id/btnReturn"
+            android:layout_width="120dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="50dp"
+            android:text="Powrót"
+            android:layout_gravity="center" />
+
+        <TextView
+            android:id="@+id/tvFooter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/footer"
+            android:textAlignment="center"
+            android:layout_marginTop="240dp"/>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
